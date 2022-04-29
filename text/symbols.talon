@@ -1,11 +1,13 @@
-question [mark]: "?"
-(downscore | underscore): "_"
+quest: "?"
+semi: ";"
+woozy: " = "
+Dublin: "::"
+(downscore | underscore | score): "_"
 double dash: "--"
 (bracket | brack | left bracket): "{"
-(rbrack | are bracket | right bracket): "}"
+(rbrack | are bracket | right bracket | racket): "}"
 triple quote: "'''"
-(triple grave | triple back tick | gravy):
-    insert("```")
+(triple grave | triple back tick | gravy): insert("```")
 (dot dot | dotdot): ".."
 ellipses: "..."
 (comma and | spamma): ", "
