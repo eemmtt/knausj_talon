@@ -202,7 +202,8 @@ symbol_key_words = {
     "caret": "^",
     "amp": "&",
     "pipe": "|",
-    "dubquote": '"',
+    "doubt": '"',
+    "dub quote": '"',
     "double quote": '"',
 
     # Currencies
