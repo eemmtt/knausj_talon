@@ -321,10 +321,14 @@ class Actions:
         add_space_after = False
         if setting_context_sensitive_dictation.get():
             # Peek left if we might need leading space or auto-capitalization.
-            if (not omit_space_before(text)
-                or text != auto_capitalize(text, "sentence start")[0]):
-                dictation_formatter.update_context(
-                    actions.user.dictation_peek_left(clobber=True))
+            # if (not omit_space_before(text)
+            #     or text != auto_capitalize(text, "sentence start")[0]):
+            #     dictation_formatter.update_context(
+            #         actions.user.dictation_peek_left(clobber=True))
+            
+            #Testing
+            dictation_formatter.update_context(actions.user.dictation_peek_left(clobber=True))
+            
             # Peek right if we might need trailing space. NB. We peek right
             # BEFORE insertion to avoid breaking the undo-chain between the
             # inserted text and the trailing space.
